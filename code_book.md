@@ -17,7 +17,8 @@ All measurements are floating point numbers within the range [-1, 1].
 
 * Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set:
 
-`walking
+```
+walking
 
 walkingupstairs
 
@@ -27,7 +28,8 @@ sitting
 
 standing
 
-laying`
+laying
+```
 
 * The script also appropriately labels the data set with descriptive names: all feature names (attributes) and activity names are
  converted to lower case, underscores and brackets () are removed. Then it merges the 10299x66 data frame containing features with 10299x1
@@ -35,7 +37,8 @@ laying`
  first column contains subject IDs, the second column activity names, and the last 66 columns are measurements. Subject IDs are integers 
  between 1 and 30 inclusive. The names of the attributes are similar to the following:
 
-`tbodyacc-mean-x 
+```
+tbodyacc-mean-x 
 
 tbodyacc-mean-y 
 
@@ -49,7 +52,8 @@ tbodyacc-std-z
 
 tgravityacc-mean-x 
 
-tgravityacc-mean-y`
+tgravityacc-mean-y
+```
 
 * Finally, the script creates an independent tidy dataset with the average measurement for each activity and each subject.
  The result is saved in dataset_averages.txt, a 180x68 data frame, where the first column contains subject IDs, 

@@ -7,9 +7,9 @@ Original description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Reco
 The R script (run_analysis.R) does the following actions to clean up the data:
 
 * Merges the training and test sets to create one dataset:
-··* train/X_train.txt with test/X_test.txt, the result is a 10299x561 dataframe, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561").
-··* train/subject_train.txt with test/subject_test.txt, the result is a 10299x1 data frame with subject IDs.
-··* train/y_train.txt with test/y_test.txt, the result is a 10299x1 dataframe with activity IDs.
+  * train/X_train.txt with test/X_test.txt, the result is a 10299x561 dataframe, as in the original description ("Number of Instances: 10299" and "Number of Attributes: 561").
+  * train/subject_train.txt with test/subject_test.txt, the result is a 10299x1 data frame with subject IDs.
+  * train/y_train.txt with test/y_test.txt, the result is a 10299x1 dataframe with activity IDs.
 
 * Reads features.txt and extracts only the measurements of the mean and standard deviation for each sample. 
 The result is a 10299x66 dataframe, because only 66 out of 561 attributes are measurements on the mean and standard deviation. 
@@ -58,4 +58,4 @@ tgravityacc-mean-y
 * Finally, the script writes an independent tidy dataset with the average measurement for each activity and each subject in a file called
  dataset_averages.txt, a 180x68 dataframe, where the first column contains subject IDs, 
  the second is activity names, and then the averages for each of the 66 attributes are in columns 3-68.
- There are 30 subjects and 6 activities (180 rows set with averages).
+ There are 30 subjects and 6 activities (180 rows).
